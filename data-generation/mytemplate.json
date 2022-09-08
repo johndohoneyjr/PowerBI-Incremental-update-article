@@ -1,0 +1,36 @@
+{
+  "_id": "$objectid",
+
+  "country": {"$choose": {"from": ["United States", "France", "Poland", "Australia", "Japan"], "weights": [2, 1, 1, 2, 1]}},
+  "Lat-Long": {
+    "point": "$point"
+  },
+  "device_mac": "{{chance.ipv6()}}",
+  "monitoring_started_at":"$now",
+  "firmware_old_ip": "$ip",
+  "firmware_new_ip": "$ip",
+  "idle": "$numberInt",
+  "node_age": "{{chance.integer({min: 1000, max: 300000})}}",
+  "rf_neigh_cnt": "{{chance.integer({min: 10, max: 90})}}",
+  "plc_neigh_cnt": "{{chance.integer({min: 0, max: 8})}}",
+  "nexthops": [
+      {
+          "Destination route": "00:13:50:ff:fe:70:45:8a",
+          "cost": "{{chance.integer({min: 42, max: 78})}}",
+          "path_cost": "{{chance.integer({min: 9, max: 24})}}",
+          "hopcnt": "{{chance.integer({min: 1, max: 3})}}",
+          "max_hopcnt": "{{chance.integer({min: 10, max: 16})}}",
+          "Flags": "0x{{chance.string({ length: 4, pool: 'abcdef0123456789' })}}",
+          "Timestamp": "{{chance.timestamp()}}",
+          "Route": "{{chance.ipv6()}}"
+      }
+  ],
+  "network_id": {"$choose": {"from": ["Mercury", "Venus", "Earth", "Mars", "Jupiter"], "weights": [2, 1, 1, 2, 1]}},
+  "diff_mlme_reboot_cntr": "{{chance.bool()}}",
+  "Collection Point": {
+    "ip_address": "$ip",
+    "unix time": "$hammertime"
+  },
+  "Technical Contact": "{{chance.name()}} <{{chance.email()}}>"
+}
+
