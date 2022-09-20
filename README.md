@@ -8,7 +8,7 @@ This file will provision the Azure Resource Group and Cosmos Database.  Once thi
 
 ### ./cosmos-loader
 I used 2 shells, WSL (Ubuntu) and Powershell in Visual Studio code.  Run "pip install -r requirements.txt" to install your python dependency. THen edit the cosmosLoader.py to provide the FULL file location of out.json (in the ./data sub-directory), the Cosmos Host URL, and Cosmos key for access.  Then run the program to load 1000 records to use with Power BI. ![Load Data Check](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/sanity-check.jpg "Sanity check of data load")
-
+<img src="https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/sanity-check.jpg" alt="Load Data Check" width="50%"/>
 ### ./data-generation - 
 This directory contains the mgenerate.js template that is capable of generating simulated data.  This mgenerate.js can be found at: https://github.com/rueckstiess/mgeneratejs
 
