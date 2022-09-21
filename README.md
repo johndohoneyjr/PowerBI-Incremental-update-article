@@ -7,7 +7,7 @@ This repo contains the assets for the Power PBI Incremental refresh Blog Post
 This file will provision the Azure Resource Group and Cosmos Database.  Once this is provisioned, you will need to access the Cosmos Database for the Host Name and Key for access.  This information needs to be filled in the the cosmosLoader.py program located in the cosmos-loader sub-directory.
 
 ### ./cosmos-loader
-I used 2 shells, WSL (Ubuntu) and Powershell in Visual Studio code.  Run "pip install -r requirements.txt" to install your python dependency. THen edit the cosmosLoader.py to provide the FULL file location of out.json (in the ./data sub-directory), the Cosmos Host URL, and Cosmos key for access.  Then run the program to load 1000 records to use with Power BI. ![Load Data Check](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/sanity-check.jpg "Sanity check of data load")
+I used 2 shells, WSL (Ubuntu) and Powershell in Visual Studio code.  Run "pip install -r requirements.txt" to install your python dependency. THen edit the cosmosLoader.py to provide the FULL file location of out.json (in the ./data sub-directory), the Cosmos Host URL, and Cosmos key for access.  Then run the program to load 1000 records to use with Power BI. ![Load Data Check](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/sanity-check.png "Sanity check of data load")
 
 ### ./data-generation - 
 This directory contains the mgenerate.js template that is capable of generating simulated data.  This mgenerate.js can be found at: https://github.com/rueckstiess/mgeneratejs
