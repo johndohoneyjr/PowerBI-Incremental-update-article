@@ -9,9 +9,10 @@
 5. That opens the Power Query Editor in a new Window.  Along the top ribbon, find the "Advanced Editor" button and click it.  This opens the Advanced Editor.  All we are going to do is change the Cosmos URL in a line that looks like this:
 
      Source = DocumentDB.Contents("https://test-power-bi.documents.azure.com:443/")
-     
+
 6. The Host URL is found in the Azure UI by going to the resource group your "Cosmos Provisioning" created, clicking on the "Azure Cosmos DB Account" and then selecting the "Keys" blade under Settings
 7. All you care about is the URI Field. CLick the "Copy to Clipboard" icon and then paste that between the double quotes on the "Source = " line as shown in step 5 above
+ ![Load Data](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/load-pbi.jpg "data load")
 8. Click done to finish with the Advanced Editor
 9. Next, click on "Blogger (2) and repeat the same steps
 10. Finally, on the right of the Ribbon is the Close and Apply.
