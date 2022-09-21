@@ -5,7 +5,7 @@ This repo contains the assets for the Power PBI Incremental refresh Blog Post
 
 ### ./Cosmos Provisioning 
 This file will provision the Azure Resource Group and Cosmos Database.  ![Azure Provision](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/provision.jpg "provision")  Once this is provisioned, you will need to access the Cosmos Database for the Host Name and Key for access.  This information needs to be filled in the the cosmosLoader.py program located in the cosmos-loader sub-directory.
- ![Load Data](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/load-db.png "data load")
+ ![Load Data](https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/load-db.jpg "data load")
 
 
 ### ./cosmos-loader
