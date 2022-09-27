@@ -14,7 +14,6 @@ partitionKey="/country"
 maxThroughput=1000 
 
 subscriptionId='<enter your subscription id here>'
-subscriptionId='220fc532-6091-423c-8ba0-66c2397d591b'
 
 az login
 

@@ -17,10 +17,8 @@ import uuid
 #    https://pypi.org/project/aiohttp/
 # ----------------------------------------------------------------------------------------------------------
 SAMPLE_DATA='out.json'
-#HOST = '<Cosmos DB URI>'
-#MASTER_KEY = '<Cosmos Primary Key here>'
-HOST = "https://pbi-cosmos-112601544.documents.azure.com:443/"
-MASTER_KEY = "JW46pqS61q3uHGPABR4E3jkfehsZXDZ3RlgbDGPqNYmYHSDhWpXap58c8Q7AjNxomYACjQ9gAEzhtVw3udZzIA=="
+HOST = '<Cosmos DB URI>'
+MASTER_KEY = '<Cosmos Primary Key here>'
 #DONT Change these, at least the first time around
 #Keeping these names, below, limits the changes in the PBIX File to Just the HOST name above
 DATABASE_ID = 'TestPBIX'
