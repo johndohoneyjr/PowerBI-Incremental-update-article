@@ -8,17 +8,17 @@ This repo contains the assets for the Power PBI Incremental refresh Blog Post
 
 This file will provision the Azure Resource Group and Cosmos Database.
 
-:::image type="content" source="images/provision.jpg" alt-text="provision":::
+![](./images/provision.jpg )
 
  Once this is provisioned, you will need to access the Cosmos Database for the Host Name and Key for access.  This information needs to be filled in the the cosmosLoader.py program located in the cosmos-loader sub-directory.
 
-:::image type="content" source="images/load-db.jpg" alt-text="data load":::
+![](./images/load-db.jpg )
 
 ### ./cosmos-loader
 
 I used 2 shells, WSL (Ubuntu) and Powershell in Visual Studio code.  Run "pip install -r requirements.txt" to install your python dependency. Then edit the cosmosLoader.py to provide the FULL file location of out.json (in the ./data sub-directory), the Cosmos Host URL, and Cosmos key for access.  Then run the program to load 1000 records to use with Power BI. ![Load Data Check]
 
-:::image type="content" source="images/sanity-check.png" alt-text="Sanity check of data load":::
+![](./images/sanity-check.jpg )
 
 ### ./data-generation -
 
@@ -36,10 +36,5 @@ Power BI desktop can only be run on Windows architectures.  The Desktop App is a
 
 The more interesting part of the PBI desktop file can be found in the Power Query Editor (PQE) (Started from the "Transform Data option on the Home Ribbon).  The PQE shows the steps to flatten the embedded document for reporting--all in place.  All of the detailed steps are contained on the right pane in the PQE editor.
 
-#1 
 ![](./images/PQE.jpg )
-#2
-<img src="https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/PQE.jpg" alt="Power Query - Flatten Steps" title="Power Query - Flatten Steps" />
 
-:::image type="content" source="images/PQE.jpg" alt-text="Power Query - Flatten Steps":::
-![Power Query - Flatten Steps](image https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/PQE.jpg "Power Query Editor")

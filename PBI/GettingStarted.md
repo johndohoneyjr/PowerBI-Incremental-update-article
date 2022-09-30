@@ -10,6 +10,8 @@
 
      Source = DocumentDB.Contents("https://test-power-bi.documents.azure.com:443/")
 
+![](../images/load-pbi.jpg )
+
 1. The Host URL is found in the azure cli script you ran to create the Azure Cosmos DB account, database and container. You should also have this in the cosmosLoader.py file as well. You can also find this in the Azure portal in the Overview blade.
 1. Click Done on the Advanced Editor. Find the yellow banner that says, Enter Credentials. Paste in the key from the azure cli script you ran or the cosmosLoader.py file as well.
 1. Next, click on "Blogger (2) and repeat the same steps
