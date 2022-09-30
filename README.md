@@ -36,5 +36,10 @@ Power BI desktop can only be run on Windows architectures.  The Desktop App is a
 
 The more interesting part of the PBI desktop file can be found in the Power Query Editor (PQE) (Started from the "Transform Data option on the Home Ribbon).  The PQE shows the steps to flatten the embedded document for reporting--all in place.  All of the detailed steps are contained on the right pane in the PQE editor.
 
+#1 
+![](./images/PQE.jpg )
+#2
+<img src="https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/PQE.jpg" alt="Power Query - Flatten Steps" title="Power Query - Flatten Steps" />
+
 :::image type="content" source="images/PQE.jpg" alt-text="Power Query - Flatten Steps":::
 ![Power Query - Flatten Steps](image https://github.com/johndohoneyjr/PowerBI-Incremental-update-article/blob/main/images/PQE.jpg "Power Query Editor")
